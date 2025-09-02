@@ -73,12 +73,12 @@ class TodoFragment : Fragment() {
 
     private fun getTask() {
         val taskList = listOf(
-            Task("0", "Criar painel administrativo para gerenciar usuários e roupas",Status.TODO),
-            Task("1","Desenvolver sistema de busca e filtros (por tamanho, tipo de roupa, localização)",Status.TODO),
-            Task("2","Implementar sistema de feedback/avaliação entre usuários",Status.TODO),
-            Task("3", "Criar área para instituições cadastrarem suas necessidades de roupas",Status.TODO),
-            Task("4","Testar e validar segurança (SQL Injection, senhas, permissões)",Status.TODO),
-        )
+            Task("0", "Integrar autenticação via redes sociais (Google, Facebook) ao painel administrativo", Status.TODO),
+            Task("1", "Adicionar geolocalização para exibir roupas disponíveis próximas ao usuário", Status.TODO),
+            Task("2", "Criar sistema de denúncias e moderação de conteúdo entre usuários", Status.TODO),
+            Task("3", "Implementar painel de controle para ONGs acompanharem doações recebidas", Status.TODO),
+            Task("4", "Aplicar testes automatizados para validar fluxos críticos e prevenir vulnerabilidades", Status.TODO),
+            )
         taskAdapter.submitList(taskList)
     }
 

@@ -74,12 +74,12 @@ class DoingFragment : Fragment() {
     }
     private fun getTask() {
         val taskList = listOf(
-            Task("0", "Desenvolvimento da página de cadastro/login de usuários", Status.DOING),
-            Task("1","Implementação do fluxo de cadastro de roupas (com fotos, descrição e categoria)", Status.DOING),
-            Task("2","Criação da tela de listagem de roupas disponíveis para compra/doação", Status.DOING),
-            Task("3", "Integração inicial do front-end com o back-end (PHP + Banco de Dados)", Status.DOING),
-            Task("4","Definição das regras de negócio para doação e venda (quem pode doar, quem pode comprar, critérios de instituição)", Status.DOING),
-        )
+            Task("0", "Login com autenticação biométrica ou reconhecimento facial em dispositivos móveis", Status.DOING),
+            Task("1", "Criação do sistema de sugestão automática de categoria com base na imagem enviada da roupa", Status.DOING),
+            Task("2", "Implementação do sistema de recomendação de roupas baseado no histórico e preferências do usuário", Status.DOING),
+            Task("3", "Configuração do cache de dados no front-end para otimizar a exibição de roupas e reduzir carga no servidor", Status.DOING),
+            Task("4", "Desenho dos fluxos personalizados de doação e compra com base no tipo de usuário e localização", Status.DOING),
+            )
         taskAdapter.submitList(taskList)
     }
 
